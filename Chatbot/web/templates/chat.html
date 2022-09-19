@@ -1,0 +1,21 @@
+{%load static%}
+<body>
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <script src="{%static 'js/fixdial.js'%}"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        <df-messenger
+            intent="WELCOME"
+            chat-title="Helpdesk Online"
+            agent-id="8d8ee27d-0dc3-4653-be0b-5780e5cfd444"
+            language-code="id"
+            wait-open="true"
+            chat-icon="https://img.icons8.com/dusk/64/undefined/technical-support.png"
+        ></df-messenger>
+        <!--style chatbox-->
+        <style>
+            df-messenger {
+            --df-messenger-button-titlebar-color: #30475E;
+            --df-messenger-chat-background-color: #4D4C7D;
+            }
+        </style>
+</body>
